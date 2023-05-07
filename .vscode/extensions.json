@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "divlo.vscode-styled-jsx-languageserver",
+    "divlo.vscode-styled-jsx-syntax",
+    "esbenp.prettier-vscode",
+    "mhutchie.git-graph",
+    "pflannery.vscode-versionlens"
+  ]
+}
