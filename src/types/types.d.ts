@@ -1,5 +1,3 @@
-/// <reference types="styled-jsx" />
-
 import 'react'
 
 declare module 'react' {
@@ -8,7 +6,3 @@ declare module 'react' {
   }
 }
 
-declare module '*.cssx' {
-  const value: string
-  export default value
-}
