@@ -1,7 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2023": true
+    "es2022": true
   },
   "ignorePatterns": ["node_modules/", ".next/", "next.config.js"],
   "extends": [
