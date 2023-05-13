@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write **/*.{js,jsx,ts,tsx,css,html,json,md,yml}"
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,css,html,json,md,yml}",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@vercel/edge-config": "0.1.9",
@@ -37,5 +38,10 @@
     "stylelint-declaration-block-no-ignored-properties": "2.7.0",
     "stylelint-plugin-logical-css": "0.12.0",
     "typescript": "5.0.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,css,html,json,md,yml}": "prettier --write",
+    "*.{css,scss,cssx}": "stylelint --fix"
   }
 }
