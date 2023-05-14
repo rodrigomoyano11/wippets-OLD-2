@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint && npx stylelint '**/*.{css,scss,cssx}'",
     "format": "prettier --write **/*.{js,jsx,ts,tsx,css,html,json,md,yml}",
     "prepare": "husky install"
   },
