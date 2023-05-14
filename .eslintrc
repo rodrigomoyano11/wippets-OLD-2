@@ -3,7 +3,7 @@
     "browser": true,
     "es2022": true
   },
-  "ignorePatterns": ["node_modules/", ".next/", "next.config.js"],
+  "ignorePatterns": ["node_modules/", ".next/", "next.config.js", "**/*.d.ts"],
   "extends": [
     "eslint:recommended",
     "next/core-web-vitals",
@@ -168,7 +168,7 @@
       { "patterns": ["foo", "bar", "Baz", "a", "b", "c", "d", "e"] }
     ],
     "no-restricted-properties": "error",
-    "no-restricted-syntax": "warn",
+    "no-restricted-syntax": ["warn", "FunctionExpression", "FunctionDeclaration"],
     "no-return-assign": "error",
     "no-return-await": "error",
     "no-script-url": "error",
