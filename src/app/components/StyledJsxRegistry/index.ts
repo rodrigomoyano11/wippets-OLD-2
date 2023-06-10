@@ -1,0 +1,1 @@
+export { StyledJsxRegistry } from './component'
